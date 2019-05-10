@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="examenAjax.js"></script>
+</head>
+
+<body>
+    <section>
+        <button onclick="getAjaxPos()"> GET POSICIO</button>
+        <button onclick="getAjaxNom()"> GET NOM</button>
+        <button onclick="getAjaxEdat()"> GET EDAT</button>
+        <button onclick="getAjaxPass()"> GET PASS</button>
+    </section>
+    <section>
+        <ol>
+            <li id="pos1">Posicion 1</li>
+            <li id="pos2">Posicion 2</li>
+            <li id="pos3">Posicion 3</li>
+            <li id="pos4">Posicion 4</li>
+        </ol>
+    </section>
+    <section>
+        <span onclick="generaPosAjax()">Pos</span>
+        <select id="posForm">
+            <option value="1"> Pos1 </option>
+            <option value="2"> Pos2 </option>
+            <option value="3"> Pos3 </option>
+            <option value="4"> Pos4 </option>
+        </select>
+
+        <span onclick="generaNomAjax()"> Nom </span>
+        <input id="nomForm" type="text" name="nom" />
+
+        <span onclick="generaEdatAjax()"> Edat </span>
+        </span> <input id="edatForm" type="number" name="edat" />
+
+        <span onclick="generaPassAjax()"> Password </span>
+        </span> <input id="passForm" type="password" name="pas" />
+    </section>
+
+    <section>
+
+        <button onclick="updatePosAjax()"> UPDATE POS </button>
+        <button onclick="updateAjaxNom()"> UPDATE NOM </button>
+        <button onclick="updateAjaxEdat()"> UPDATE EDAT</button>
+        <button onclick="updateAjaxPass()"> UPDATE PASS</button>
+    </section>
+
+
+    <section>
+        <h4>ESTABLIR UN VALOR EN UNA POSICIO ALEATORIA</h4>
+        <button onclick="setPosAjaxNom()"> GUARDA NOM</button>
+        <button onclick="setPosAjaxEdat()"> GUARDA EDAT</button>
+        <button onclick="setPosAjaxPass()"> GUARDA PASS</button>
+    </section>
+    
+
+
+    <section id="mostraResultats">
+    </section>
+
+</body>
+
+</html>
